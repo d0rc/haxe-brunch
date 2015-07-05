@@ -1,0 +1,19 @@
+{
+  "name": "haxe-brunch",
+  "version": "0.0.1",
+  "description": "haxe brunch plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0rc/haxe-brunch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d0rc/haxe-brunch/issues"
+  },
+  "homepage": "https://github.com/d0rc/haxe-brunch#readme"
+}
