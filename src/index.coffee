@@ -10,7 +10,9 @@ module.exports = class HaxeBrunchCompiler
     compile: (data, path, callback) ->
         exec = require('child_process').exec
         fs   = require('fs')
-        child = exec "haxe #{path} -js /tmp/test.js", (err, stdout, stderr) ->
+        pu   = require('path')
+        dirname = pu.dirname(path)
+        child = exec "cd #{dirname}; haxe #{path} -js /tmp/test.js", (err, stdout, stderr) ->
             if err?
                 console.log("Failed to compile #{path}: ", err)
                 callback err
