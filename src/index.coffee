@@ -24,5 +24,5 @@ module.exports = class HaxeBrunchCompiler
                     callback "failed to read compiled file"
                 else
                     callback null, {
-                        data: compiled
+                        data: compiled.toString()
                     }
